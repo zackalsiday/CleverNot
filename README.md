@@ -1,24 +1,6 @@
-# README
+# CleverNote
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Overview
+  Clevernote is an website inspired by the famous "Evernote". After logging in/signing in users are 
+  allowed to view their notes,create Notebooks to organize their notes and or organize through tags.
+  When a note/notebook/tag is created, Users will have to power to edit or delete as they wish.
