@@ -1,5 +1,39 @@
 {
   "name": "CleverNote",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.2",
+    "redux": "^4.1.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "description": "# Overview   Clevernote is an website inspired by the famous \"Evernote\". After logging in/signing in users are    allowed to view their notes,create Notebooks to organize their notes and or organize through tags.   When a note/notebook/tag is created, Users will have to power to edit or delete as they wish.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zackalsiday/CleverNote.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zackalsiday/CleverNote/issues"
+  },
+  "homepage": "https://github.com/zackalsiday/CleverNote#readme"
 }
