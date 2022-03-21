@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/zackalsiday/CleverNote#readme",
   "engines": {
-    "node": "12.5.0",
-    "npm": "6.9.0"
+    "node": "14.18.2",
+    "npm": "6.14.15"
   }
 }
