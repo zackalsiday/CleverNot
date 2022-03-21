@@ -23,7 +23,7 @@ attr_reader :current_user
   end
 
   def logout
-    debugger 
+    # debugger 
     current_user.reset_session_token!
     session[:session_token] = nil
     @current_user = nil

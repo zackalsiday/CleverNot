@@ -13,7 +13,7 @@ protect_from_forgery with: :null_session
     if @user
       
       login(@user)
-       debugger
+      #  debugger
       render "api/users/show"
  
     else
@@ -24,7 +24,7 @@ protect_from_forgery with: :null_session
   def destroy
    
       @user = current_user
-   debugger
+  #  debugger
     if @user
        
       logout
