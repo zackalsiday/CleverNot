@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-    validates :username, :sesstion_token, presence: true
+    validates :username, :session_token, presence: true
     validates :password_digest, presence: { message: 'Password can\'t be blank'}
     validates :password, length: {minimum: 6}, allow_nil: true 
 
@@ -23,13 +23,13 @@ class User < ApplicationRecord
   def reset_session_token!
     generate_unique_session_token
     save!
-    self.sesstion_token
+    self.session_token
   end
 
   private
 
   def ensure_session_token
-    generate_unique_session_token unless self.sesstion_token
+    generate_unique_session_token unless self.session_token
   end
 
   def new_session_token
@@ -37,10 +37,10 @@ class User < ApplicationRecord
   end
 
   def generate_unique_session_token
-    self.sesstion_token = new_session_token
-    while User.find_by(sesstion_token: self.sesstion_token)
-      self.sesstion_token = new_session_token
+    self.session_token = new_session_token
+    while User.find_by(session_token: self.session_token)
+      self.session_token = new_session_token
     end
-    self.sesstion_token
+    self.session_token
   end
 end
