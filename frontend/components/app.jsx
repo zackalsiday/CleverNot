@@ -12,9 +12,11 @@ const App = () => (
         <header>
             <div className='landing-top'>
                 <span className='main-title'>CleverNote</span>
-                <Link to="/login">Login</Link>
+                <Link className='login-form-link' to="/login"> <div id='login-form-link'>Login</div></Link>
             </div>
-            
+            <div>
+
+            </div>
             <LandingContainer/> 
         </header>
         

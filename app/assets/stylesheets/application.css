@@ -23,4 +23,46 @@ body{
     line-height: 22px;
 }
 
+.landing-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16.4rem 0 15.4rem;
+    color: #000
+}
+
+.main-title{
+    font-size: 1.5rem;
+}
+
+.landing-page-info{
+    padding-left: 60px;
+}
+
+.landing-page-info{
+    position: relative;
+    left: 10rem;
+    width: fit-content;
+}
+
+
+.signup-form-link{
+     text-decoration: none;  
+}
+
+.login-form-link{
+    text-decoration: none;
+    color: black;
+}
+
+#signup-form-link{
+     background-color: #29A82C;
+     width: 301px;
+     height: 40px;
+     color: white;
+     border-radius: 3px;
+     text-align: center;
+     letter-spacing: 1.5px;
+     padding-top: 15px;
+
+}
 

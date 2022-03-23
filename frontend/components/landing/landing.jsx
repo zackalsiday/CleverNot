@@ -5,11 +5,18 @@ import { Link } from 'react-router-dom';
 
 const Landing = ({ currentUser, logout }) => {
     const sessionLinks = () => (
-        <nav className="login-signup">
+        <div className="landing-page-info">
             {/* <Link to="/login">Login</Link>
             &nbsp;or&nbsp; */}
-            <Link to="/signup">Sign up!</Link>
-        </nav>
+          
+            <Link className='signup-form-link' to="/signup"><div id='signup-form-link'>Sign up for free</div> </Link> 
+                
+               
+          
+                
+            
+            
+        </div>
     );
     const personalGreeting = () => (
         <hgroup className="header-group">
