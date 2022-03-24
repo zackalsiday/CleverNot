@@ -5,17 +5,25 @@ import { Link } from 'react-router-dom';
 
 const Landing = ({ currentUser, logout }) => {
     const sessionLinks = () => (
-        <div className="landing-page-info">
-            {/* <Link to="/login">Login</Link>
-            &nbsp;or&nbsp; */}
-          
-            <Link className='signup-form-link' to="/signup"><div id='signup-form-link'>Sign up for free</div> </Link> 
-                
-               
-          
-                
+        <div className="welcome-page">   
             
-            
+            <div className='welcome-header'>
+                {/* most likely will change the main-title to a logo */}
+                <span className='main-title'>CleverNote</span> 
+                <Link className='login-form-link' to="/login"> <div id='login-form-link'>Login</div></Link>
+            </div>
+            <div className='welcome-body'>
+                <div className='phase-one'>
+                    <h1 className='first-sent'>Tame your work, organize your life</h1>
+                    <h5 className='second-sent'>
+                        Remember everything and tackle any project with your notes, tasks, and schedule all in one place.
+                    </h5>
+                     <p>
+                          <Link className='signup-form-link' to="/signup"><span id='signup-form-link'>Sign up for free</span> </Link>
+                    </p>
+                </div>
+              
+            </div>
         </div>
     );
     const personalGreeting = () => (

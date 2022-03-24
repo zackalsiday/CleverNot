@@ -23,6 +23,60 @@ body{
     line-height: 22px;
 }
 
+.welcome-header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 26.2rem;
+    padding-right: 33rem;
+
+}
+
+.welcome-body{
+    padding-top: 60px;
+}
+
+.phase-one{
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+.first-sent{
+    font-size: 56px;
+    font-family: "Soleil_Medium",Helvetica,Arial,sans-serif;
+    line-height: 150%
+}
+
+.second-sent{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%
+}
+.login-form-link{
+    text-decoration: none;
+    color: inherit
+}
+
+.signup-form-link{
+    text-decoration: none;
+    color: inherit
+    
+}
+
+#signup-form-link{
+      /* background-color: #29A82C;  */
+  font-size: 16px;
+    padding: 16px 80px;
+    background: #00a82d;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    text-align: center;
+
+}
+/* 
 .landing-top{
     display: flex;
     justify-content: space-between;
@@ -64,5 +118,5 @@ body{
      letter-spacing: 1.5px;
      padding-top: 15px;
 
-}
+} */
 
