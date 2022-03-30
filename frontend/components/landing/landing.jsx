@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-
-
+import {RiLightbulbFill} from 'react-icons/ri'
 const Landing = ({ currentUser, logout }) => {
     const sessionLinks = () => (
         <div className="welcome-page">   
             
             <div className='welcome-header'>
                 {/* most likely will change the main-title to a logo */}
-                <span className='main-title'>CleverNote</span> 
+                <span className='main-logo'>
+                    <div className='test'> < RiLightbulbFill size="2.5em" color="#29A82C"/></div>
+                    <h2 className='main-title'>Clevernote</h2>
+                </span>
                 <Link className='login-form-link' to="/login"> <div id='login-form-link'>Login</div></Link>
             </div>
             <div className='welcome-body'>
@@ -27,10 +28,14 @@ const Landing = ({ currentUser, logout }) => {
         </div>
     );
     const personalGreeting = () => (
+    <div>
         <hgroup className="header-group">
             <h2 className="header-name">Hi, {currentUser.username}!</h2>
             <button className="header-button" onClick={logout}>Log Out</button>
+            
         </hgroup>
+    </div>
+        
     );
 
     return currentUser ? personalGreeting() : sessionLinks();

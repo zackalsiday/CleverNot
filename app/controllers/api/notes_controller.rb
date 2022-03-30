@@ -35,7 +35,7 @@ class Api::NotesController < ApplicationController
   def destory
     @note = Note.find(params[:id]) 
     if @note && @note.destroy 
-      render :show 
+      render :show // what are we showing if its being deleted  
     else 
       render json: ["This note does not exist"], status: 404
     end

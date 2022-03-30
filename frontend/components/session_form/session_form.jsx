@@ -1,4 +1,7 @@
 import React from 'react'
+// import { FaRegLightbulb } from 'react-icons/fa'
+import {RiLightbulbFill} from 'react-icons/ri'
+
  class SessionForm extends React.Component {
      constructor(props) { 
      super(props)
@@ -34,33 +37,50 @@ import React from 'react'
 
      render() {
          return (
-             <div className="login-form-container">
-                 <form onSubmit={this.handleSubmit} className="login-form-box">
-                     Welcome to CleverNote!
-                     <br />
-                     Please {this.props.formType} or {this.props.navLink}
-                     {this.renderErrors()}
-                     <div className="login-form">
-                         <br />
-                         <label>Username:
-                             <input type="text"
-                                 value={this.state.username}
-                                 onChange={this.update('username')}
-                                 className="login-input"
-                             />
-                         </label>
-                         <br />
-                         <label>Password:
-                             <input type="password"
-                                 value={this.state.password}
-                                 onChange={this.update('password')}
-                                 className="login-input"
-                             />
-                         </label>
-                         <br />
-                         <input className="session-submit" type="submit" value={this.props.formType} />
-                     </div>
-                 </form>
+             
+             <div className="login-signup-page">
+                 {/* <div className='test'> < RiLightbulbFill size="2em" color="#29A82C4F" repeat='repeat'/></div> */}
+
+                 <div className='login-signup-form-box'>
+                      <form onSubmit={this.handleSubmit} className="login-signup-form">
+                        <div className='from-heading'>
+                             <div className='form-logo'> < RiLightbulbFill size="3.5em" color="#29A82C" /></div>
+                             <h2 className='form-title'>Clevernote</h2>
+                             <p className='form-intro'>Remember everything important.</p>
+                        </div>
+                        <br />
+                        
+                        {this.renderErrors()}
+                        <div className="login-signup-form">
+                            <br />
+                            <div className='form-inputs'>
+                                 <input type="text"
+                                    value={this.state.username}
+                                    onChange={this.update('username')}
+                                    className="login-signup-input"
+                                    placeholder='Username'
+                                />
+                    
+                                
+                            
+                                <input type="password"
+                                    value={this.state.password}
+                                    onChange={this.update('password')}
+                                    className="password-input"
+                                    placeholder='Password'
+                                />
+                            </div>
+                               
+                           
+                            
+                            <input className="session-submit" type="submit" value={this.props.formType} />
+                        </div>
+                        <div className='form-toggle'>Please {this.props.formType} or {this.props.navLink}</div> 
+                        
+                      
+                    </form>
+                 </div>
+                
              </div>
          );
      }
