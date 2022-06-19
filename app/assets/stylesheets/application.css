@@ -27,11 +27,17 @@ body{
 .welcome-header{
     display: flex;
     justify-content: space-between;
-    padding-left: 23.1rem;
+    
+    /* padding-left: 23.1rem;
     padding-right: 33.3rem;
-    padding-top: 0.5rem;
+    padding-top: 0.5rem; */
    
 
+}
+
+#the-link-on-bottom-of-form{
+    margin-left: 4px;
+   
 }
 
 .main-logo{
@@ -80,6 +86,11 @@ body{
     
 }
 
+.form-errors{
+    margin-bottom: 5rem;
+   size: 1px;
+   color: rgb(244, 7, 7)
+}
 #signup-form-link{
    
   font-size: 16px;

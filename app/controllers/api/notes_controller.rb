@@ -1,8 +1,9 @@
 class Api::NotesController < ApplicationController
-  def index
-    @notes = current_user.notes 
-    render :index 
-  end
+
+    def index
+        @notes = Note.all 
+        render json: @notes 
+    end
 
   def show
     @note = Note.find(params[:id])

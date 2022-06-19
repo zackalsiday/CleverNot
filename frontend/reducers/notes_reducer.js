@@ -1,22 +1,24 @@
-import { RECEIVE_NOTE, RECEIVE_NOTES, REMOVE_NOTE } from "../actions/note_action";
+import {
+    RECEIVE_ALL_NOTES,
+    RECEIVE_NOTE,
+    REMOVE_NOTE,
+} from '../actions/note_actions';
 
-
-const notesReducer = (state = {}, action) => {
-    Object.freeze(state);
-    let newState = Object.assign({}, state);
-
+const notesReducer = (oldState = {}, action) => {
+    Object.freeze(oldState);
+    let nextState = { ...oldState };
     switch (action.type) {
-        case RECEIVE_NOTES:
+        case RECEIVE_ALL_NOTES:
             return action.notes;
-        // case RECEIVE_NOTE:
-        //     newState[action.note.id] = action.note;
-        //     return newState;
+        case RECEIVE_NOTE:
+            nextState[action.note.id] = action.note;
+            return nextState;
         case REMOVE_NOTE:
-            delete newState[action.noteId];
-            return newState;
+            delete nextState[action.noteId];
+            return nextState;
         default:
-            return state;
+            return oldState;
     }
-}
+};
 
 export default notesReducer;

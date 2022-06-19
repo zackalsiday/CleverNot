@@ -25,7 +25,7 @@ import {RiLightbulbFill} from 'react-icons/ri'
 
      renderErrors() {
          return (
-             <ul>
+             <ul className='form-errors'>
                  {this.props.errors.map((error, i) => (
                      <li key={`error-${i}`}>
                          {error}
@@ -75,7 +75,7 @@ import {RiLightbulbFill} from 'react-icons/ri'
                             
                             <input className="session-submit" type="submit" value={this.props.formType} />
                         </div>
-                        <div className='form-toggle'>Please {this.props.formType} or {this.props.navLink}</div> 
+                         <div className='form-toggle'>Please {this.props.formType} or <span id='the-link-on-bottom-of-form' >{this.props.navLink}</span></div> 
                         
                       
                     </form>
